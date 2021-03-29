@@ -1,0 +1,8 @@
+package paquete;
+
+public class PersonaMain {
+	public static void main(String[] args) {
+		Persona persona = new Persona("Sergio", 'M',30,"Tlalpan");
+		System.out.println(persona);
+	}
+}

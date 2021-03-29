@@ -1,0 +1,35 @@
+package variablesCondicionales;
+
+import ejercicios.Entrada;
+
+//15. Pedir el día, mes y año de una fecha e indicar si la fecha es correcta. Suponiendo todos los meses de
+//30 días.
+public class Ejercicio15Distinto {
+
+	public static void main(String[] args) {
+		int dia;
+		int mes;
+		int año;
+		
+		System.out.println("Introduzca el dia: ");
+		dia = Entrada.entero();
+		System.out.println("Introduzca el mes: ");
+		mes = Entrada.entero();
+		System.out.println("Introduzca el año: ");
+		año = Entrada.entero();
+		
+		if (dia >= 1 && dia <=30) {
+			if (mes >=1 && mes <= 12) {
+				if (año > 0) {
+					System.out.println("Fecha correcta");
+				}else {
+					System.out.println("Año incorrecto");
+				}
+			}else {
+				System.out.println("Mes incorrecto");
+			}
+		}else {
+			System.out.println("Día incorrecto");
+		}
+	}
+}

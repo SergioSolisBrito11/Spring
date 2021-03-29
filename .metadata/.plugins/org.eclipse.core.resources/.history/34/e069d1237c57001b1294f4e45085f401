@@ -1,0 +1,19 @@
+package com.bolsadeideas.springboot.web.app.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+//Un controlador tiene métodos de acción o "handler" que manejará una petición HTTP del usuario
+@Controller
+public class IndexController {
+
+//	"@RequestMapping" por default es de tipo GET, también se pueden usar anotaciones específicas como @GetMapping, @PostMapping, etc
+//	Un método puede estar mapeado a más de una ruta
+	@GetMapping({"/index", "/", "home"})
+	public String index() {
+		
+		return "index";
+	}
+}

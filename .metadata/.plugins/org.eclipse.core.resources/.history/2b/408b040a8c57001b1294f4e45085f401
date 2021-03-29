@@ -1,0 +1,40 @@
+package com.bolsadeideas.springboot.web.app.controllers;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.bolsadeideas.springboot.web.app.model.Usuario;
+
+//Un controlador tiene métodos de acción o "handler" que manejará una petición HTTP del usuario
+@Controller
+//Con "@RequestMapping" indicamos cuál será nuestra ruta de primer nivel
+@RequestMapping("/app")
+public class IndexController {
+
+//	"@RequestMapping" por default es de tipo GET, también se pueden usar anotaciones específicas como @GetMapping, @PostMapping, etc
+//	Un método puede estar mapeado a más de una ruta
+	@GetMapping({"/index", "/","", "home"})
+	//Para pasar datos desde el controlador a la vista podemos usar la interfaz "Model", la clase "ModelMap" o la interfaz "Map"
+	public String index(Model model) {
+		model.addAttribute("titulo","Hola Spring Framework con Model");
+		return "index";
+	}
+	
+	@RequestMapping("/perfil")
+	public String perfil(Model model) {
+		Usuario usuario = new Usuario();
+		usuario.setNombre("Sergio");
+		usuario.setApellido("Solís");
+		model.addAttribute("usuario", usuario);
+		model.addAttribute("titulo","Perfil del usuario: ".concat(usuario.getNombre()));
+
+		
+		return "perfil";
+	}
+}

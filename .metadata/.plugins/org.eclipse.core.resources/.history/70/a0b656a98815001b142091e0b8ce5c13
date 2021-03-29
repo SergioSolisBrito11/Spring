@@ -1,0 +1,7 @@
+package paquete;
+
+public class Empleado extends Persona{
+	private int idEpleado;
+	private double sueldo;
+	
+}

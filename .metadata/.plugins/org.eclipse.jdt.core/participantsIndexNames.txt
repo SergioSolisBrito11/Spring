@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+C:\Users\sergio.solis\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1346661682.index
+\JSF_JPA_CRUD\src\main\resources
+C:\Users\sergio.solis\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\563892302.index
+\holamundo-jsf\src\main\resources
+C:\Users\sergio.solis\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1114707056.index
+\mx.com.procesar\src\main\resources
+C:\Users\sergio.solis\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1441167332.index
+\java-web-project\src\main\resources
+C:\Users\sergio.solis\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\801340801.index
+\mx.com.procesar.exposicion\src\main\resources
